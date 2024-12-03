@@ -1,5 +1,3 @@
-# Secretive SSH agent
-export SSH_AUTH_SOCK=/Users/kaos/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -32,18 +30,6 @@ ZSH_TMUX_AUTOSTART=true
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-
-#Export for openvpn
-export PATH=/opt/homebrew/Cellar/openvpn/2.6.2/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/opt/fzf/bin
-
-#Export for openvpn
-export PATH=/opt/homebrew/Cellar/openvpn/2.6.2/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/opt/fzf/bin
-
-#Export for openvpn
-export PATH=/opt/homebrew/Cellar/openvpn/2.6.2/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/homebrew/opt/fzf/bin
-# ---- FZF -----
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
@@ -109,14 +95,3 @@ alias cdi="zi"
 
 # Enable Starship prompt
 eval "$(starship init zsh)"
-
-
-# Enable Oh My Posh 
-# eval "$(oh-my-posh init zsh)"
-# eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/catppuccin.omp.json)" 
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/kaos/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kaos/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/kaos/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kaos/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
