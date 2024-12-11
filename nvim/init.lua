@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.bufferline"), -- status line
+	require("plugins.bufferline"), -- buffer status line
 	require("plugins.gitsigns"), -- git symbol
 	require("plugins.autopairs"), -- auto-pairing brackets
 	require("plugins.alpha-nvim"), -- welcome screen
@@ -24,6 +24,7 @@ require("lazy").setup({
 	require("plugins.lsp"), -- LSP configuration
 	require("plugins.conform"), -- autoformatter
 	require("plugins.nvim-cmp"), -- autocompletion
+	require("plugins.linel"), -- lualine, statusline module
 	require("plugins.mini"), -- various mini modules
 	require("plugins.treesitter"), -- code highlithing
 })

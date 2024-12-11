@@ -16,8 +16,6 @@ vim.o.softtabstop = 4
 vim.o.expandtab = true
 
 vim.o.whichwrap = "bs<>[]hl" -- Which "horizontal" keys can travel to prev/next line
-vim.o.cmdheight = 1 -- More space in commandline
-vim.o.pumheight = 10 -- Pop up menu height
 vim.opt.fillchars = { eob = " " } -- Hide ~ characters at empty lines
 vim.g.have_nerd_font = true -- To levarage Nerd Font
 vim.opt.showmode = false -- Don't show mode
@@ -25,6 +23,8 @@ vim.opt.undofile = true -- Show undo history
 vim.opt.signcolumn = "yes" -- Keep signcolumn on by default
 vim.opt.updatetime = 250 -- Decrease update time
 vim.opt.timeoutlen = 300 -- Displays which-key popup sooner
+vim.opt.signcolumn = "yes"
+vim.o.cmdheight = 1
 
 -- Configure how new splits should be opened
 vim.opt.splitright = true
